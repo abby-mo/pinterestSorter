@@ -27,7 +27,7 @@ export default function App() {
       setStatus(s);
       setView(s.connected ? { name: 'setup' } : { name: 'connect' });
     } catch {
-      setFatal('Cannot reach the Pin Sorter server. Is `npm run dev` running?');
+      setFatal('Cannot reach the Swipekeep server. Is `npm run dev` running?');
     }
   }, []);
 

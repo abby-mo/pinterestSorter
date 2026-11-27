@@ -1,4 +1,4 @@
-# Pin Sorter
+# Swipekeep
 
 A local web app for sorting your Pinterest pins with a swipe interface.
 
@@ -111,7 +111,7 @@ Everything is in `data/` (gitignored), or in the folder named by `DATA_DIR`:
 | `settings.json` | Demo-mode toggle |
 | `mock-db.json` | Boards/copies created in demo mode |
 
-This project folder is inside OneDrive, so `data/tokens.json` would be synced to the cloud. To keep it local, point `DATA_DIR` at a folder outside OneDrive, for example `DATA_DIR=C:/Users/<you>/AppData/Local/pin-sorter`.
+This project folder is inside OneDrive, so `data/tokens.json` would be synced to the cloud. To keep it local, point `DATA_DIR` at a folder outside OneDrive, for example `DATA_DIR=C:/Users/<you>/AppData/Local/swipekeep`.
 
 To start over, stop the app and delete the data folder. That only resets this app; it doesn't touch Pinterest.
 
@@ -140,3 +140,12 @@ client/src/
   pages/              Connect, Setup (board picker), Swipe, Summary
   components/         SwipeCard, Masonry, SyncStatus, Header, UI pieces
 ```
+
+## Project website
+
+`docs/` is a small static site, published with GitHub Pages (Settings → Pages → Deploy from branch → `main` / `/docs`). It's the website and privacy-policy URL registered with the Pinterest developer app:
+
+- `https://abby-mo.github.io/pinterestSorter/`
+- `https://abby-mo.github.io/pinterestSorter/privacy/`
+
+If you edit [PRIVACY.md](PRIVACY.md), update `docs/privacy/index.html` to match.

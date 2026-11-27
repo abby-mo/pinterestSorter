@@ -14,8 +14,8 @@ app.use(express.json({ limit: '1mb' }));
 
 // Basic CSRF guard: state-changing calls must come from our own frontend.
 app.use('/api', (req, res, next) => {
-  if (req.method !== 'GET' && req.get('x-pin-sorter') !== '1') {
-    res.status(403).json({ error: 'Missing x-pin-sorter header' });
+  if (req.method !== 'GET' && req.get('x-swipekeep') !== '1') {
+    res.status(403).json({ error: 'Missing x-swipekeep header' });
     return;
   }
   next();
@@ -65,7 +65,7 @@ setInterval(async () => {
 /* ---------- start / stop ---------- */
 
 const server = app.listen(config.port, '127.0.0.1', () => {
-  console.log(`Pin Sorter API on http://127.0.0.1:${config.port}  (mode: ${currentMode()})`);
+  console.log(`Swipekeep API on http://127.0.0.1:${config.port}  (mode: ${currentMode()})`);
   if (!hasCredentials()) console.log('No Pinterest credentials in .env, so demo mode is available only.');
   console.log(`Data directory: ${config.dataDir}`);
 });

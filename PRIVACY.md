@@ -1,8 +1,8 @@
-# Privacy Policy: Pin Sorter
+# Privacy Policy: Swipekeep
 
 _Last updated: November 27, 2026_
 
-Pin Sorter is a personal, non-commercial tool that helps its developer sort their own Pinterest pins into boards. It runs only on the developer's own computer. It is not offered to the public and has no other users.
+Swipekeep is a personal, non-commercial tool that helps its developer sort their own Pinterest pins into boards. It runs only on the developer's own computer. It is not offered to the public and has no other users.
 
 ## What the app accesses
 

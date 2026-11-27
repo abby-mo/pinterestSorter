@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipekeep: sort your own pins, one swipe at a time</title>
+    <meta name="description" content="Swipekeep is a personal tool for sorting my own Pinterest pins into boards with a simple swipe interface." />
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <a class="brand" href="./"><img src="icon.svg" alt="" />Swipekeep</a>
+        <nav>
+          <a href="./" aria-current="page">About</a>
+          <a href="privacy/">Privacy</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="hero">
+          <img class="icon" src="icon.svg" alt="Swipekeep app icon" />
+          <h1>Swipekeep</h1>
+          <p class="lede">
+            A personal tool for sorting my own Pinterest pins. It shows one pin at a time: swipe left to keep it on a
+            board I choose, swipe right to skip it.
+          </p>
+        </div>
+
+        <img class="shot" src="screenshot.jpg" alt="Swipekeep showing a single pin card with Save, Undo and Skip buttons" />
+        <p class="caption">The sorting screen, shown here with sample data.</p>
+
+        <section>
+          <h2>What it does</h2>
+          <div class="cards">
+            <div class="card">
+              <strong>1. Pick boards</strong>
+              <p>Choose which of my boards to sort from, and a board to save keepers into (or create a new one).</p>
+            </div>
+            <div class="card">
+              <strong>2. Swipe</strong>
+              <p>Swipe left (or press ←) to save a copy of the pin. Swipe right (or press →) to skip. Undo any mistake.</p>
+            </div>
+            <div class="card">
+              <strong>3. Review</strong>
+              <p>See everything I saved in a gallery. Progress is remembered, so I can stop and pick up later.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Who it's for</h2>
+          <p>
+            Swipekeep is a personal, non-commercial project. It runs on my own computer and is used only by me, with my
+            own Pinterest account. It is not a public service, it has no other users, and it is not a social media site.
+          </p>
+        </section>
+
+        <section>
+          <h2>How it uses the Pinterest API</h2>
+          <p>Swipekeep signs in with Pinterest's official OAuth and only works with the signed-in account's own data.</p>
+          <table>
+            <thead>
+              <tr><th>Permission</th><th>Used for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>user_accounts:read</code></td><td>Showing which account is connected</td></tr>
+              <tr><td><code>boards:read</code></td><td>Listing my boards to sort from and save into</td></tr>
+              <tr><td><code>pins:read</code></td><td>Showing my pins one at a time</td></tr>
+              <tr><td><code>pins:write</code></td><td>Saving a copy of a chosen pin to my destination board</td></tr>
+              <tr><td><code>boards:write</code></td><td>Creating a new destination board, only when I ask</td></tr>
+            </tbody>
+          </table>
+          <h3>What it never does</h3>
+          <p>
+            Swipekeep never deletes, moves or edits existing pins or boards, and never accesses other people's data.
+            Nothing is shared, sold or sent anywhere except Pinterest's own API. Details are in the
+            <a href="privacy/">privacy policy</a>.
+          </p>
+        </section>
+
+        <section>
+          <p class="notice">
+            Swipekeep is an independent personal project. It is not affiliated with, endorsed by, or sponsored by
+            Pinterest.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p><a href="privacy/">Privacy policy</a> · <a href="https://github.com/abby-mo/pinterestSorter">Source code</a> · <a href="https://github.com/abby-mo/pinterestSorter/issues">Contact</a></p>
+        <p>© 2026 abby-mo</p>
+      </footer>
+    </div>
+  </body>
+</html>

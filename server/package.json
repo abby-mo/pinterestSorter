@@ -1,5 +1,5 @@
 {
-  "name": "pin-sorter-server",
+  "name": "swipekeep-server",
   "private": true,
   "type": "module",
   "scripts": {

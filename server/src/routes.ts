@@ -188,7 +188,7 @@ api.post('/sessions/:id/undo', (req, res) => {
   if (last.decision === 'save') {
     const result = cancelSave(state.data, last.pinId, session.destBoardId);
     if (result === 'already-sent') {
-      note = `Already copied to “${session.destBoardName}” on Pinterest. Pin Sorter never deletes pins — remove the copy in Pinterest if you don't want it.`;
+      note = `Already copied to “${session.destBoardName}” on Pinterest. Swipekeep never deletes pins — remove the copy in Pinterest if you don't want it.`;
     }
   }
   session.updatedAt = Date.now();

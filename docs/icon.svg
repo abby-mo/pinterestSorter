@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#0B4F6C"/>
+    </linearGradient>
+    <clipPath id="photo">
+      <rect x="412" y="268" width="296" height="330" rx="36"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1024" height="1024" rx="230" fill="url(#bg)"/>
+
+  <!-- back card -->
+  <rect x="250" y="270" width="360" height="510" rx="60" fill="#ffffff" opacity="0.35" transform="rotate(-14 430 525)"/>
+
+  <!-- front card -->
+  <g transform="rotate(7 560 496)">
+    <rect x="380" y="236" width="360" height="520" rx="60" fill="#ffffff"/>
+    <g clip-path="url(#photo)">
+      <rect x="412" y="268" width="296" height="330" fill="#CFF3EC"/>
+      <circle cx="636" cy="344" r="36" fill="#FFC857"/>
+      <path d="M380 560 Q 470 430 570 520 Q 640 470 740 520 V 620 H 380 Z" fill="#2BB39B"/>
+      <path d="M380 600 Q 520 500 740 590 V 620 H 380 Z" fill="#168F7C"/>
+    </g>
+    <rect x="412" y="628" width="220" height="28" rx="14" fill="#1F2937" opacity="0.85"/>
+    <rect x="412" y="676" width="150" height="24" rx="12" fill="#9CA3AF"/>
+  </g>
+
+  <!-- sorted badge -->
+  <circle cx="742" cy="742" r="122" fill="#FFB020" stroke="#ffffff" stroke-width="28"/>
+  <path d="M684 744 L726 786 L804 704" fill="none" stroke="#ffffff" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

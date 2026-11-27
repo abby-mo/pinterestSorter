@@ -15,7 +15,7 @@ async function call<T>(method: 'GET' | 'POST', url: string, body?: unknown): Pro
     method,
     headers: {
       Accept: 'application/json',
-      ...(method !== 'GET' ? { 'x-pin-sorter': '1', 'Content-Type': 'application/json' } : {}),
+      ...(method !== 'GET' ? { 'x-swipekeep': '1', 'Content-Type': 'application/json' } : {}),
     },
     body: body !== undefined ? JSON.stringify(body) : undefined,
   });

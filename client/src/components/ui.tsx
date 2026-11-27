@@ -45,12 +45,8 @@ export function Spinner({ className = '' }: { className?: string }) {
 export function Logo() {
   return (
     <span className="flex items-center gap-2">
-      <svg viewBox="0 0 32 32" className="size-8" aria-hidden>
-        <rect width="32" height="32" rx="9" fill="#E60023" />
-        <rect x="7" y="9" width="11" height="15" rx="3" fill="#fff" opacity=".55" transform="rotate(-10 12.5 16.5)" />
-        <rect x="13" y="7" width="12" height="17" rx="3" fill="#fff" />
-      </svg>
-      <span className="text-lg font-bold tracking-tight">Pin Sorter</span>
+      <img src="/favicon.svg" alt="" className="size-8" />
+      <span className="text-lg font-bold tracking-tight">Swipekeep</span>
     </span>
   );
 }
